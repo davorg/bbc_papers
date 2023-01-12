@@ -1,0 +1,37 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use feature 'say';
+
+use Time::Piece;
+use Web::Query;
+use JSON;
+
+my $site  = 'https://bbc.co.uk';
+my $start = "$site/news/";
+my $file  = 'docs/papers.json';
+my $js_p  = JSON->new->pretty;
+my $data;
+
+if (-e $file) {
+  open my $fh, '<', $file or die "$!\n";
+  my $json = do { local $/; <$fh> };
+  $data = $js_p->decode($json);
+}
+
+wq($start)->find('a')
+  ->each(sub {
+  my ($i, $elem) = @_;
+    return unless $elem->text =~ /^The Papers:/;
+    push @$data, {
+      date => localtime->strftime('%Y-%m-%d'),
+      text => $elem->text,
+      link => $site . $elem->attr('href'),
+    };
+  });
+
+open my $fh, '>', $file or die "$!\n";
+print $fh $js_p->encode($data);
+
