@@ -12,7 +12,7 @@ use JSON;
 my $site  = 'https://bbc.co.uk';
 my $start = "$site/news/";
 my $file  = 'docs/papers.json';
-my $js_p  = JSON->new->pretty;
+my $js_p  = JSON->new->pretty->canonical;
 my $data;
 
 if (-e $file) {
@@ -21,7 +21,11 @@ if (-e $file) {
   $data = $js_p->decode($json);
 }
 
-wq($start)->find('a')
+my $start_len = @$data;
+
+my $q = wq($start);
+
+$q->find('a')
   ->each(sub {
   my ($i, $elem) = @_;
     return unless $elem->text =~ /^The Papers:/;
@@ -32,6 +36,10 @@ wq($start)->find('a')
     };
   });
 
-open my $fh, '>', $file or die "$!\n";
-print $fh $js_p->encode($data);
+if (@$data == $start_len) {
+  warn "No new article found\n";
+} else {  
+  open my $fh, '>', $file or die "$!\n";
+  print $fh $js_p->encode($data);
+}
 
