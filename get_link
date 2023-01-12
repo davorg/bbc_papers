@@ -31,7 +31,7 @@ $q->find('a')
     return unless $elem->text =~ /^The Papers:/;
     push @$data, {
       date => localtime->strftime('%Y-%m-%d'),
-      text => $elem->text,
+      text => ($elem->text =~ s/^The Papers:\s*//r),
       link => $site . $elem->attr('href'),
     };
   });
