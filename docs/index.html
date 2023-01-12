@@ -92,21 +92,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
             integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
             crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-            crossorigin="anonymous"></script>
-
     <script>
 
-$(document).ready(function(){
-    $.getJSON("papers.json", function(data) {
-        var tableBody = $("table tbody");
-        $.each(data, function(index, item) {
-          var row = "<tr>";
-          row += "<td>" + item.date + "</td>";
-          row += "<td><a href='" + item.link + "'>" + item.text + "</a></td>";
-          row += "</tr>";
-          tableBody.append(row);
+document.addEventListener("DOMContentLoaded", function(){
+    fetch("papers.json")
+    .then(response => response.json())
+    .then(data => {
+        const tableBody = document.querySelector("table tbody");
+        data.forEach(item => {
+            const row = document.createElement("tr");
+            const date = document.createElement("td");
+            date.textContent = item.date;
+            row.appendChild(date);
+            const textLink = document.createElement("td");
+            const a = document.createElement("a");
+            a.href = item.link;
+            a.textContent = item.text;
+            textLink.appendChild(a);
+            row.appendChild(textLink);
+            tableBody.appendChild(row);
         });
     });
 });
