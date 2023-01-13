@@ -1,51 +1,67 @@
 [
-   {  "text" : "Better times ahead, says PM, and tributes to Pope",
+   {
+      "date" : "2023-01-01",
       "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64137723",
-      "date" : "2023-01-01"
-   },
-   {  "text" : "NHS crisis '500 deaths a week' and PM's 'headache'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64142327",
-      "date" : "2023-01-02"
-   },
-   {  "text" : "Harry wants family 'back' and NHS on 'knife edge'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64148753",
-      "date" : "2023-01-03"
-   },
-   {  "text" : "'Must study maths until 18' as 'medics condemn PM'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64158653",
-      "date" : "2023-01-04"
-   },
-   {  "text" : "'PM's five pledges' and '£122m PPE unsafe for NHS'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64170457",
-      "date" : "2023-01-05"
-   },
-   {  "text" : "'Harry spills secrets' and 'attacks on strike law'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64182433",
-      "date" : "2023-01-06"
-   },
-   {  "text" : "'Fury at Harry's Taliban claims' and 'Chinese spy fears'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64194347",
-      "date" : "2023-01-07"
-   },
-   {  "text" : "'Harry's Diana funeral guilt' and 'NHS pay boost'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64200751",
-      "date" : "2023-01-08"
-   },
-   {  "text" : "Harry interview reaction and 'US China fears'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64206354",
-      "date" : "2023-01-09"
-   },
-   {  "text" : "'No way back' says Harry and hope over strikes",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64218349",
-      "date" : "2023-01-10"
-   },
-   {  "text" : "'Workers face strike ban' and 'prince of sales'",
-      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64231544",
-      "date" : "2023-01-11"
+      "text" : "Better times ahead, says PM, and tributes to Pope"
    },
    {
-      "text" : "Royal Mail 'cyberattack' and mortgage default warning",
+      "date" : "2023-01-02",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64142327",
+      "text" : "NHS crisis '500 deaths a week' and PM's 'headache'"
+   },
+   {
+      "date" : "2023-01-03",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64148753",
+      "text" : "Harry wants family 'back' and NHS on 'knife edge'"
+   },
+   {
+      "date" : "2023-01-04",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64158653",
+      "text" : "'Must study maths until 18' as 'medics condemn PM'"
+   },
+   {
+      "date" : "2023-01-05",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64170457",
+      "text" : "'PM's five pledges' and '£122m PPE unsafe for NHS'"
+   },
+   {
+      "date" : "2023-01-06",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64182433",
+      "text" : "'Harry spills secrets' and 'attacks on strike law'"
+   },
+   {
+      "date" : "2023-01-07",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64194347",
+      "text" : "'Fury at Harry's Taliban claims' and 'Chinese spy fears'"
+   },
+   {
+      "date" : "2023-01-08",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64200751",
+      "text" : "'Harry's Diana funeral guilt' and 'NHS pay boost'"
+   },
+   {
+      "date" : "2023-01-09",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64206354",
+      "text" : "Harry interview reaction and 'US China fears'"
+   },
+   {
+      "date" : "2023-01-10",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64218349",
+      "text" : "'No way back' says Harry and hope over strikes"
+   },
+   {
+      "date" : "2023-01-11",
+      "link" : "https://www.bbc.co.uk/news/blogs-the-papers-64231544",
+      "text" : "'Workers face strike ban' and 'prince of sales'"
+   },
+   {
+      "date" : "2023-01-12",
       "link" : "https://bbc.co.uk/news/blogs-the-papers-64244483",
-      "date" : "2023-01-12"
+      "text" : "Royal Mail 'cyberattack' and mortgage default warning"
+   },
+   {
+      "date" : "2023-01-13",
+      "link" : "https://bbc.co.uk/news/blogs-the-papers-64257766",
+      "text" : "'Life-saving statin handout' and 'Grenfell agony'"
    }
 ]
